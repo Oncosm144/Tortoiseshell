@@ -21,16 +21,21 @@ header {
   background-position: center;
   background-size: cover;
   height: 31rem;
-  width: auto;
 }
 
 .top {
   display: inline-flex;
   align-items: center;
+  justify-content: space-between;
   background-color: cadetblue;
   height: 3.4rem;
   width: 100%;
   margin-top: 1rem;
+}
+
+#logo {
+  display: inline-flex;
+  align-items: center;
 }
 
 .top img {
@@ -40,11 +45,18 @@ header {
 
 .top h3 {
   color: white;
-  padding: 1rem 13rem 1rem 1rem;
+  padding: 1rem;
 }
+
+ul{
+  display: inline-flex;
+  margin-right: 1rem;
+}
+
 .top a {
+  text-decoration: none;
   color: white;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
 header h1 {
@@ -141,4 +153,28 @@ footer img {
   height: 1.5rem;
   width: auto;
   padding: 4rem 1rem 4rem 4rem;
+}
+/* tablet resizing */
+@media only screen and (max-width: 960px) {
+  .container {
+    max-width: 960px;
+    margin: 0;
+  }
+  .top {
+    margin-top: 0;
+    width: 100%;
+  }
+  .top h3 {
+    padding: 1rem;
+  }
+  header {
+    height: 22rem;
+  }
+  header h1 {
+    margin-top: 6rem;
+    margin-right: 2rem;
+    padding: 1.25rem 4rem;
+    font-size: 1.33rem;
+    width: auto;
+  }
 }
